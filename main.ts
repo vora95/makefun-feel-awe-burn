@@ -15,5 +15,6 @@ if (points < 1 || points > 280) {
   throw new Error(`entry is ${points} code points, must be 1-280`);
 }
 
+const OUT = "/output/entry.txt";
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", TEXT, "utf8");
+writeFileSync(OUT, TEXT, "utf8");
