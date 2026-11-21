@@ -1,5 +1,6 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
+// Deterministic: no input, no randomness, no network — the same text every run.
 const TEXT = `Snow fell all night,
 too quiet to hear.
 By morning the field was a clean page
